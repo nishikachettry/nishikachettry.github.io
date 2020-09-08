@@ -119,6 +119,10 @@ nav{
 	color: #EBE4DE;
 }
 
+#end p{
+	font-size: 1.5vw;
+}
+
 #end p a, #end footer a{
 	color: #EBE4DE;
 }
