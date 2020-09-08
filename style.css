@@ -1,0 +1,402 @@
+/*--------------------------------------------------------------------------Common Styling------------------------------------------------------------------------------------------*/
+/* nav: #9B9A94
+   pink: #E0CBC4
+   black: #131310
+   light: #EBE4DE*/
+
+@font-face{
+	font-family: Raleway;
+	src: url(Raleway-Medium.ttf);
+}
+
+@font-face{
+	font-family: RobotoMono;
+	src:url(RobotoMono-Medium.ttf);
+}
+
+@font-face{
+	font-family:PTSans;
+	src:url(PTSans-Regular.ttf);
+}
+
+body{
+	background: #FFFFFF;
+	font-weight: 400;
+	font-family: PTSans;
+}
+
+h1, h2, h3{
+	font-family: Raleway;
+	color: #131310 ;
+	font-weight: 400;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 4.5vw;
+}
+
+h2{
+	font-size: 2.8vw;
+}
+
+h3{
+	font-size: 2.2vw;
+}
+
+p{
+	font-size: 1.5vw;
+}
+
+video{
+	width:90%;
+	height:40vw;
+	margin: auto 5%;
+}
+
+
+/*-------------------------------------------------------------------------------Navigation Bars (Top &down)-----------------------------------------------------------------------*/
+.logo{
+	margin: 1vw 0.5vw;
+	width: 15%;
+	height: 5%;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links ul{
+	display: flex;
+	list-style: none;
+}
+
+.nav-links li a{
+	font-family: Raleway;
+	font-size: 1.7vw; 
+	text-decoration: none;
+	padding: 0.5vw;
+	margin: 1.5vw;
+	color: #9B9A94;
+}
+
+.nav-links li a:hover{
+	font-weight: bold;
+	border-bottom: 0.3vh solid #E0CBC4;
+}
+
+.active{
+	font-weight: bold;
+	border-bottom: 0.3vh solid #E0CBC4;
+}
+
+#down li a{
+	color: #EBE4DE;
+	font-size: 1.3vw;
+	font-family: Raleway;
+	text-decoration: none;
+	padding: 0.5vw;
+	margin: 1.5vw;
+}
+
+#down li a:hover{
+	font-weight: bold;
+	border-bottom: 0.3vh solid #E0CBC4;
+}
+
+/*-------------------------------------------------------------------------------Ending section--------------------------------------------------------------------------------------*/
+
+#end{
+	background:#9B9A94;
+	padding: 3vw 0vw 2vw 3vw;
+}
+
+#end p, #end footer{
+	padding-left:1vw;
+	color: #EBE4DE;
+}
+
+#end p{
+	font-size: 1.5vw;
+}
+
+#end p a, #end footer a{
+	color: #EBE4DE;
+}
+
+#end footer{
+	font-size:1.2vw;
+}
+
+/*---------------------------------------------------------------------------------Home Page----------------------------------------------------------------------------------*/
+#introduction{ 
+	margin: 10vh 0;
+	display: flex;
+	width: 100%;
+	height: 50%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),  0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#writing{
+	font-family:RobotoMono;
+	padding: 5%;
+	padding-left: 10%;
+	width: 65%;
+}
+
+#name{
+	font-size: 6vw;
+}
+
+#name strong{
+	color: #E0CBC4;
+}
+
+#description{
+	font-size: 2vw;
+}
+
+#picture{
+	width: 35%;
+	background: #E0CBC4;
+}
+
+#picture img{
+	border-radius: 50%;
+	width: 80%;
+	height: 70%;
+	margin: 22% 10% 10% 10%;
+}
+
+#quote{
+	padding: 3vw;
+	background: #EBE4DE;
+}
+
+#des{
+	text-align: center;
+	color: black;
+	font-size: 2.2vw;
+	padding: 1vh;
+}
+  
+#quote hr{
+	width: 15%;
+}
+
+#name-q{
+	font-size: 2vw;
+	text-align: center;
+	padding: 0.5vh;
+	color: black;
+	font-style: italic;
+}
+
+#skills{
+	width: cover;
+	margin-top: 5vw;
+	padding: 3vw 9vw;
+}
+
+#skills-sep{
+	display: flex;
+}
+
+#it, #tech{
+	width: 50%;
+}
+
+#it div, #tech div{
+	display: flex;
+	padding: 0vw 3vw 2vw 1vw;
+}
+
+#it div p, #tech div p{
+	color: #9B9A94;
+	margin-left: 2vw;
+	margin-top: 0.5vw;
+}
+
+#it div p:hover, #tech div p:hover{
+	color:#E0CBC4;
+}
+
+#contact{
+	margin:auto auto 5vw 2vw;
+	padding: 4vw 7vw;
+}
+
+
+/*----------------------------------------------------------------------------------Content settings (General)---------------------------------------------------------------------------*/
+
+#content{
+	width: 70%;
+	margin: 10vh auto;
+}
+
+#content ul li, ol li{
+	font-size: 1.5vw;
+	color: #9B9A94;
+}
+
+#content p, #contact p{
+	color: #9B9A94;
+}
+
+p a, #content ul li a{
+	color: #9B9A94;
+}
+
+
+/*----------------------------------------------------------------------------------Other Pages------------------------------------------------------------------------------------------*/
+
+/*-----------Flipping cards in achievements----------------------*/
+
+.rows{
+	display: flex;
+}
+
+.flip-card{
+	position:relative;
+	width: 30vw;
+	height: 15vw;
+	background:transparent;
+	margin: 2.2vw;
+}
+
+.flip-card-inner{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	text-align: center;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),  0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.flip-card-front, .flip-card-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front{
+	background:#E0CBC4;
+}
+
+.flip-card-back{
+	background:#EBE4DE;
+	transform: rotateY(180deg);
+}
+
+.flip-card-front p, .flip-card-back p{
+	padding:1.5vw 0.5vw;
+	font-size: 1.5vw;
+}
+
+.flip-card-back p{
+	padding: 3vw 0.5vw;
+}
+
+.flip-card-inner:hover{
+	transform: rotateY(180deg);
+}
+
+#alone{
+	width: 18vw;
+}
+	
+/*-----------Whats new and Project containers and others---------------------*/
+.news, .project{
+	display: flex;
+	margin: 5vw auto;
+	padding-top: 3vw;
+	padding-bottom: 2vw;
+	padding-left: 4vw;
+	padding-right: 0;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),  0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.news p, .project p{
+	font-size: 1.5vw;
+}
+
+.date{
+	font-size: 1vw;
+}
+
+.news div, .project div{
+	width: 60%;
+}
+
+.news img, .project img{
+	width: 40%;
+	height: 90%;
+	margin: 3vw 4vw;
+}
+
+.project img{
+	width: 27%;
+}
+
+.audio-amp-img{
+	width: 30vw;
+	height: 20vw;
+	min-width: 150px;
+	min-height: 120px;
+	margin: 1vw;
+}
+
+figure div{
+	margin-left: 4vw;
+	display: flex;
+}
+
+figure{
+	text-align: center;
+	font-size: 1.7vw;
+}
+
+
+/*-----------------------------------------------------------------------For smaller screens-----------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){
+	
+	h1{
+		font-size: 5.9vw;
+	}
+	
+	h2{
+		font-size: 4vw;
+	}
+	
+	#introduction, #content{
+		margin-top: 5vw;
+		margin-bottom: 10vw;
+	}
+	
+	#content{
+		width: 90%;
+		margin: auto;
+	}
+	
+	#contact p, .nav-links li a, #description, #content p, #content ul li, .news p, .project p, #it div p, #tech div p{
+		font-size: 2vw;
+	}
+
+	#down li a{
+		font-size: 1.3vw;
+	}
+	
+	#alone{
+		width: 24vw;
+	}
+	
+	.flip-card-inner:active{
+		transform: rotateY(180deg);
+	}
+
+}
