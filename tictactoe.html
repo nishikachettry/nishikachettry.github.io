@@ -1,0 +1,107 @@
+<html>
+
+	<head> 
+		<title>Nishika Chettry-Projects-Tic Tac Toe</title>
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href= "style.css" type= "text/css" rel= "stylesheet">
+	</head>
+
+	<body>
+	
+		<nav>
+			<img class = "logo" onmouseover="logoHover()" onmouseout="logoNormal()" src="logo.png">
+			<div class ="nav-links">
+			<ul>
+				<li><a href="index.html" >Home </a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="whats-new.html" >What's new</a></li>
+				<li><a href="achievements.html" >Achievements</a></li>
+				<li><a class="active" href="projects.html" >Projects</a></li>
+			</ul>
+			</div>
+		</nav>
+		
+		<section id = "content">
+			<h1>2/3 Player Tic Tac Toe <i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i></h1>
+			<p>Language used: <strong>Java</strong></p>
+			<p> We have all played tic tac toe at some point in our life, but it usually involved 2 players. 
+				However, this game allows a 2 player or 3 player game according to choice.
+				The players can play amongst themselves or against the computer. 
+				Error messages are displayed when none of the game types are chosen or when none of the players have been specified.
+			</p>
+				
+			<h2>Planning</h2>
+			<p> I started off by finalising the different functionalities that would be in the game, then I moved on to decide the different classes that I would require and distributed the responsibilities amongst those instances. 
+				I had to ensure that the coupling was low, and cohesion was high. 
+				Creating a UML diagram was quite helpful as it enabled me to clearly see the relationship between the different classes and the purpose that they served. 
+				I planned to develop the game using three different stages, first being the main logic development and testing, second being a TUI, and lastly the final GUI.
+			</p>
+			
+			<h2>Action</h2>
+			<p> I used Test Driven Development to create the classes. 
+				This method was extremely beneficial when developing the logic as it reduced the amount of error and the pressure of testing everything together at the end. 
+				During the first stage I created the different classes for the Board, Player and the main simulation. 
+				After having completed this stage, I created a TUI for testing the entire game. 
+				Finally, I developed the GUI for the game, this included various classes for the different aspects such as displaying the main home page, analysing the inputs and displaying the game. 
+				After having the structure and logic ready for the GUI, I designed and customised it using different colours and fonts.
+			</p>
+			
+			<h2>Design and OOP Principles</h2>
+			<p>
+				The project has been created keeping all the OOP principles in mind. 
+				<ul>
+					<li>High cohesion and low coupling have been maintained throughout. For example, there are different classes for initialising and displaying the main window, taking the input from the user,
+						analysing the input for the creation of the game board and initialising and displaying the game board. </li>
+					<li>Implementation hiding and data encapsulation have been obeyed by declaring fields "private" and providing getter methods and by binding the data (fields) together with the behaviour (methods). </li>
+					<li>It is a responsibility driven design, as the instances have some behaviour and are not just bundles of data.</li>
+					<li>DRY (Do Not Repeat) has been implemented in the code, by reusing the code whenever needed through composition.</li>
+					<li>Error avoidance has been followed by checking the parameters, whenever passed, for validation and throwing an exception in case the parameter is not valid. For example, when a player occupies
+						a place, a check is performed whether the position is already occupied or not.</li>
+				</ul> 
+			</p>
+			
+			<h2>Result</h2>
+			<p>The video below shows the final result.</p>
+			<video autoplay controls>
+				<source src="ttt-video.mp4" type="video/mp4">
+				Your browser does not support the video
+			</video>
+			
+			<h2>Learnings and Improvements</h2>
+			<p> Through this project, I was able to learn a lot about GUI, such as designing, efficiently setting up multiple windows, user interactivity and various other features and functionalities of JavaFX. 
+				I have also been able to write better test cases with higher coverage rates. 
+				I have gained further experience in creating responsibility driven design which is very essential when coding larger systems. 
+			</p>
+			<p>
+				However, there is a further improvement required which is a little delay in the time lap within which the computer responds. 
+				At the moment, it responds immediately which is the reason why the statement for the Computer’s turn in not visible. 
+				Also, there can be further improvements in making the computer play smartly. 
+				If you have any suggestions or ideas regarding these or any other feedback, then please feel free to contact me via <a href="mailto:nishikachettry11@gmail.com">email</a> or <a href = "https://www.linkedin.com/in/nishika-chettry-8aa43019a/"> LinkedIn</a>.
+			</p>
+			
+		</section>
+		
+		<section id="end">
+			<nav>
+				<img class = "logo" onmouseover="logoHover()" onmouseout="logoNormal()" src="logo-dark.png">
+				<div class ="nav-links" id="down">
+				<ul>
+					<li><a href="index.html" >Home </a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="whats-new.html" >What's new</a></li>
+					<li><a href="achievements.html" >Achievements</a></li>
+					<li><a href="projects.html" >Projects</a></li>
+				</ul>
+				</div>
+			</nav>
+			<h3>Contact Me:</h3>
+				<p>Email: nishikachettry11@gmail.com
+				<br>LinkedIn: Feel free to <a href = "https://www.linkedin.com/in/nishika-chettry-8aa43019a/">connect</a></p>
+			<footer><small>Icons by <a href="https://icons8.com/">icons8</a> and <a href="https://fontawesome.com/v4.7.0/icons/">Font Awesome</a><br>&copy; Copyright 2020, Nishika Chettry. All rights reserved.</small> </footer> 
+		</section>
+		
+		
+	</body>
+	
+</html>
