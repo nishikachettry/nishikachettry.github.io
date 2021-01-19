@@ -1,0 +1,94 @@
+<html>
+
+	<head> 
+		<title>Nishika Chettry-Projects-Multistage Amplifier</title>
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href= "style.css" type= "text/css" rel= "stylesheet">
+	</head>
+
+	<body>
+	
+		<nav>
+			<img class = "logo" onmouseover="logoHover()" onmouseout="logoNormal()" src="logo.png">
+			<div class ="nav-links">
+			<ul>
+				<li><a href="index.html" >Home </a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="whats-new.html" >What's new</a></li>
+				<li><a href="achievements.html" >Achievements</a></li>
+				<li><a class="active" href="projects.html" >Projects</a></li>
+			</ul>
+			</div>
+		</nav>
+		
+		<section id = "content">
+			<h1>Multistage Amplifier <i class="fa fa-microchip" aria-hidden="true"></i></h1>
+			<p> After having gained some hands on experience in working with transistors,
+				I was required to design and build a multistage amplifier using FETs and BJTs. 
+				I always look forward to projects like these and I was really excited and happy to see everything come along as I was working on it.</p>
+			
+			<h2>Planning</h2>
+			<p> I was provided a detailed specification that my design had to accomplish, for example, I couldn't use resistors below the value of 1kohms, there was a specific gain, output and input impedances that I was required to achieve.
+				Planning mainly involved setting up deadlines to complete the various tasks and keeping track of progress. 
+				I was required to complete the project within 3 weeks, each week included 2 x 3hr labs sessions (Due to covid situation I couldn't access the labs oustide these hours)</p>
+			
+			<h2>Action</h2>
+			<p> There were 4 stages in the amplifier, the first one being a FET source follower which was used for a having a high input impedance, the other two stages were BJTs which were used for the gain and the final stage was a phase splitter using a BJT. 
+				I spent a couple of lab sessions completing the design calculations. 
+				It wasn't an easy task, as I had to undergo the same calculations over and over again, trying to estimate the resistor values. 
+				However, after my 21st trial, I finally was able to achieve the specification.
+				After having completed the calculations, I simulated the circuit on Proteus. Due to careful considerations during the design phase, I just had to change two resistor and for the rest I used the same values that I had calculated.
+				Having finished the simulation stage, I moved on to the final prototyping stage. 
+				I built the circuit on breadboard using the different components and performed the testing. I recorded all the measurements in an excel sheet which was the report that I was required to submit. 
+				I also added all the tolerance calculations in the report in order to justify the variations in the measurement values. 
+			</p>
+			
+			<h2>Result</h2>
+			<p> The design worked quite well. 
+				I was able to achieve all the design specifications. 
+				The amount of time that I had spent on the calculations were worth it as I did not have to change much components during the simulation stage.
+				I scored an 87% overall for the project. 
+				The picture below shows the final breadboard circuit that I built.
+			</p>
+			
+			<figure>
+				<img class="multi-amp-img"src = "multi-amp.png" alt="Multistage-Amplifier">
+				<figcaption>Final ciruit Multistage Amplifier</figcaption>
+			</figure>
+		
+			<h2>Learnings and Improvements</h2>
+			<p> This project helped me gain further experience in designing, building and testing analogue electronic systems. 
+				I learnt about cascaded amplifiers and the different considerations one needs to understand and implement in the design specifically when doing the calculations for the components. 
+				I have now understood how important is the designing phase of any electronic systems, the amount of time and effort put into this phase reflects throughout the project. 
+				Spending some time carefully designing the circuit actually aids in creating an efficient system at the end. 
+			</p>
+			<p>
+				Next time, I would use an excel sheet for the design calculations, using excel formulas really makes it easier to perform those calculations. 
+			</p>
+		
+		</section>
+		
+		<section id="end">
+			<nav>
+				<img class = "logo" onmouseover="logoHover()" onmouseout="logoNormal()" src="logo-dark.png">
+				<div class ="nav-links" id="down">
+				<ul>
+					<li><a href="index.html" >Home </a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="whats-new.html" >What's new</a></li>
+					<li><a href="achievements.html" >Achievements</a></li>
+					<li><a href="projects.html" >Projects</a></li>
+				</ul>
+				</div>
+			</nav>
+			<p>Contact Me:
+				<br><i class="fa fa-envelope" aria-hidden="true"></i> nishikachettry11@gmail.com
+				<br><i class="fa fa-linkedin-square" aria-hidden="true"></i> Feel free to <a href = "https://www.linkedin.com/in/nishika-chettry-8aa43019a/">connect</a>
+			</p>
+			<footer><small>Icons by <a href="https://icons8.com/">icons8</a> and <a href="https://fontawesome.com/v4.7.0/icons/">Font Awesome</a><br>&copy; Copyright 2020, Nishika Chettry. All rights reserved.</small> </footer> 
+		</section>
+		
+	</body>
+	
+</html>
